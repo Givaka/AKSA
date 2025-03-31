@@ -1,0 +1,7 @@
+<header></header>
+<main>
+  <ng-container *ngFor="let item of menuList">
+    <a tuiButton appearance="menuButton">{{ menuStage() ? item.title : ''}}</a>
+  </ng-container>
+</main>
+<footer></footer>

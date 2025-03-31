@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+
+<body>
+  <tui-scrollbar>
+    <cdk-virtual-scroll-viewport #viewport appendOnly tuiScrollable class="viewport tui-zero-scrollbar" [itemSize]="45"
+      [maxBufferPx]="500" [minBufferPx]="400">
+
+      <table tuiTable>
+        <thead>
+          <tr tuiThGroup>
+            <th tuiTh>ФИО клиента</th>
+            <th tuiTh>Время посещения</th>
+            <th tuiTh>Услуга</th>
+            <th tuiTh>Стоимость</th>
+            <th tuiTh>Статус</th>
+          </tr>
+        </thead>
+        <tbody tuiTbody>
+          <tr *ngFor="let event of eventsList">
+            <td tuiTd>{{ event.user }}</td>
+            <td tuiTd>{{ event.start_date }}</td>
+            <td tuiTd>{{ event.type }}</td>
+            <!-- <td tuiTd>{{  }}</td>
+            <td tuiTd>{{ event.status }}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+  </tui-scrollbar>
+</body>

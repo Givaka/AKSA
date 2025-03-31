@@ -1,0 +1,32 @@
+<app-menu></app-menu>
+
+<body>
+  <tui-scrollbar>
+    <cdk-virtual-scroll-viewport #viewport appendOnly tuiScrollable class="viewport tui-zero-scrollbar" [itemSize]="45"
+      [maxBufferPx]="500" [minBufferPx]="400">
+
+      <table tuiTable>
+        <thead>
+          <tr tuiThGroup>
+            <th tuiTh>ФИО клиента</th>
+            <th tuiTh>Email</th>
+            <th tuiTh>Телефон</th>
+          </tr>
+        </thead>
+        <tbody tuiTbody>
+          <tr *ngFor="let client of clientsList" #dropdown="tuiDropdown" tuiDropdownContext [tuiDropdown]="contextMenu">
+            <td tuiTd>{{ client.fullname }}</td>
+            <td tuiTd>{{ client.email }}</td>
+            <td tuiTd>{{ client.phone }}</td>
+
+            <ng-template #contextMenu>
+              <tui-data-list role="menu" tuiDataListDropdownManager class="context-menu">
+                <button type="button" tuiOption (click)="changeClient(client); dropdown.toggle(false)">Изменить</button>
+              </tui-data-list>
+            </ng-template>
+          </tr>
+        </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+  </tui-scrollbar>
+</body>

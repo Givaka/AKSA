@@ -1,0 +1,15 @@
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+:host{
+  display: flex;
+  flex-direction: column;
+
+  width: 4rem;
+  height: 100%;
+
+  background-color: gray;
+}
+
+[tuiAppearance][data-appearance='menuButton'] {
+  
+}

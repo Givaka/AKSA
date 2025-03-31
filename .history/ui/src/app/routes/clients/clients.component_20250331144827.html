@@ -1,0 +1,26 @@
+<app-menu></app-menu>
+
+<body>
+  <!-- <tui-scrollbar>
+    <cdk-virtual-scroll-viewport #viewport appendOnly tuiScrollable class="viewport tui-zero-scrollbar" [itemSize]="45"
+      [maxBufferPx]="500" [minBufferPx]="400"> -->
+
+      <table tuiTable>
+        <thead>
+          <tr tuiThGroup>
+            <th >ФИО клиента</th>
+            <th >Email</th>
+            <th >Телефон</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr  *ngFor="let client of clientsList">
+            <td >1</td>
+            <td >1</td>
+            <td >1</td>
+          </tr>
+        </tbody>
+      </table>
+    <!-- </cdk-virtual-scroll-viewport>
+  </tui-scrollbar> -->
+</body>

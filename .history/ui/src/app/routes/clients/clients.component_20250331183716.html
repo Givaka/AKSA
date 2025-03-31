@@ -1,0 +1,69 @@
+<app-menu></app-menu>
+
+<body>
+  <tui-scrollbar>
+    <cdk-virtual-scroll-viewport #viewport appendOnly tuiScrollable class="viewport tui-zero-scrollbar" [itemSize]="45"
+      [maxBufferPx]="500" [minBufferPx]="400">
+
+      <table tuiTable>
+        <thead>
+          <tr tuiThGroup>
+            <th tuiTh>ФИО клиента</th>
+            <th tuiTh>Email</th>
+            <th tuiTh>Телефон</th>
+          </tr>
+        </thead>
+        <tbody tuiTbody>
+          <tr *ngFor="let client of clientsList" #dropdown="tuiDropdown" tuiDropdownContext
+            [tuiDropdown]="contextMenu">
+            <td tuiTd>{{ client.fullname }}</td>
+            <td tuiTd>{{ client.email }}</td>
+            <td tuiTd>{{ client.phone }}</td>
+
+            <ng-template #contextMenu>
+              <tui-data-list role="menu" tuiDataListDropdownManager class="context-menu">
+                <button type="button" tuiOption (click)="changeClient(service); dropdown.toggle(false)">Изменить</button>
+              </tui-data-list>
+            </ng-template>
+          </tr>
+        </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+  </tui-scrollbar>
+</body>
+
+<app-aside>
+  <button type="button" tuiIconButton tuiHint="Добавить пользователя" iconStart="@tui.plus"
+    (click)="openDrawer.set(true)"></button>
+</app-aside>
+
+<tui-drawer *tuiPopup="openDrawer()" direction="right" class="drawer" [overlay]="true" (click.self)="onClose()">
+  <header class="header">
+    <h2 tuiHeader>
+      <div tuiTitle>Новый клиент</div>
+      <div tuiAccessories>
+        <button tuiIconButton tuiButtonClose (click)="onClose()">
+          Close
+        </button>
+      </div>
+    </h2>
+  </header>
+
+  <main>
+    <form [formGroup]="newClientForm">
+      <tui-input formControlName="fullname">ФИО клиента*
+        <input tuiTextfieldLegacy />
+      </tui-input>
+
+      <tui-input formControlName="email" [tuiTextfieldCleaner]="true">Email клиента*
+        <input placeholder="mail@mail.ru" tuiTextfieldLegacy type="email" />
+      </tui-input>
+
+      <tui-input-phone formControlName="phone">Номер телефона клиента</tui-input-phone>
+    </form>
+  </main>
+  <footer>
+    <button type="button" size="l" tuiButton (click)="onClose()">Отменить</button>
+    <button type="button" size="l" tuiButton appearance="primary" (click)="addClient()">Добавить</button>
+  </footer>
+</tui-drawer>

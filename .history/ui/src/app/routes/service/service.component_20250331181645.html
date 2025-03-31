@@ -1,0 +1,69 @@
+<app-menu></app-menu>
+
+<body>
+  <tui-scrollbar>
+    <cdk-virtual-scroll-viewport #viewport appendOnly tuiScrollable class="viewport tui-zero-scrollbar" [itemSize]="45"
+      [maxBufferPx]="500" [minBufferPx]="400">
+
+      <table tuiTable>
+        <thead>
+          <tr tuiThGroup>
+            <th tuiTh>Название</th>
+            <th tuiTh>Стоимость</th>
+          </tr>
+        </thead>
+        <tbody tuiTbody>
+          <tr *ngFor="let service of servicesList" #dropdown="tuiDropdown" tuiDropdownContext
+            [tuiDropdown]="contextMenu">
+            <td tuiTd>{{ service.title }}</td>
+            <td tuiTd>{{ service.cost | number:"1.1-2" }} {{ 'RUB' | tuiCurrency }}</td>
+
+            <ng-template #contextMenu>
+              <tui-data-list role="menu" tuiDataListDropdownManager class="context-menu">
+                <button type="button" tuiOption
+                  (click)="deleteService(service); dropdown.toggle(false)">Удалить</button>
+                <!-- <button type="button" tuiOption
+                  (click)="changeService(service); dropdown.toggle(false)">Удалить</button> -->
+              </tui-data-list>
+            </ng-template>
+          </tr>
+        </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+  </tui-scrollbar>
+</body>
+
+<app-aside>
+  <button type="button" tuiIconButton tuiHint="Добавить пользователя" iconStart="@tui.plus"
+    (click)="openDrawer.set(true)"></button>
+</app-aside>
+
+<tui-drawer *tuiPopup="openDrawer()" direction="right" class="drawer" [overlay]="true" (click.self)="onClose()">
+  <header class="header">
+    <h2 tuiHeader>
+      <div tuiTitle>Новая услуга</div>
+      <div tuiAccessories>
+        <button tuiIconButton tuiButtonClose (click)="onClose()">
+          Close
+        </button>
+      </div>
+    </h2>
+  </header>
+
+  <main>
+    <form [formGroup]="newServiceForm">
+      <tui-input formControlName="title">Название услуги*
+        <input tuiTextfieldLegacy />
+      </tui-input>
+
+      <tui-textfield>
+        <label tuiLabel>Стоимость услуги*</label>
+        <input tuiInputNumber formControlName="cost" [postfix]="'RUB' | tuiCurrency" />
+      </tui-textfield>
+    </form>
+  </main>
+  <footer>
+    <button type="button" size="l" tuiButton (click)="onClose()">Отменить</button>
+    <button type="button" size="l" tuiButton appearance="primary" (click)="addService()">Добавить</button>
+  </footer>
+</tui-drawer>
