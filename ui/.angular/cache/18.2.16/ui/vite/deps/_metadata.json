@@ -1,0 +1,226 @@
+{
+  "hash": "590c8f45",
+  "configHash": "1bef3794",
+  "lockfileHash": "4b0020c2",
+  "browserHash": "a02e91cb",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "beb7cdba",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "8a9e2db0",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations.mjs",
+      "file": "@angular_platform-browser_animations.js",
+      "fileHash": "849f08a3",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "2af7acb8",
+      "needsInterop": false
+    },
+    "@taiga-ui/core": {
+      "src": "../../../../../../node_modules/@taiga-ui/core/fesm2022/taiga-ui-core.mjs",
+      "file": "@taiga-ui_core.js",
+      "fileHash": "63821a2f",
+      "needsInterop": false
+    },
+    "@taiga-ui/event-plugins": {
+      "src": "../../../../../../node_modules/@taiga-ui/event-plugins/fesm2022/taiga-ui-event-plugins.mjs",
+      "file": "@taiga-ui_event-plugins.js",
+      "fileHash": "87225346",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "abd0b750",
+      "needsInterop": false
+    },
+    "@taiga-ui/addon-table": {
+      "src": "../../../../../../node_modules/@taiga-ui/addon-table/fesm2022/taiga-ui-addon-table.mjs",
+      "file": "@taiga-ui_addon-table.js",
+      "fileHash": "a7a38f4e",
+      "needsInterop": false
+    },
+    "@angular/cdk/scrolling": {
+      "src": "../../../../../../node_modules/@angular/cdk/fesm2022/scrolling.mjs",
+      "file": "@angular_cdk_scrolling.js",
+      "fileHash": "003fef56",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "cf61ec69",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "60298048",
+      "needsInterop": false
+    },
+    "@taiga-ui/kit": {
+      "src": "../../../../../../node_modules/@taiga-ui/kit/fesm2022/taiga-ui-kit.mjs",
+      "file": "@taiga-ui_kit.js",
+      "fileHash": "ddb6a3c9",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "47c71097",
+      "needsInterop": false
+    },
+    "@taiga-ui/legacy": {
+      "src": "../../../../../../node_modules/@taiga-ui/legacy/fesm2022/taiga-ui-legacy.mjs",
+      "file": "@taiga-ui_legacy.js",
+      "fileHash": "a0b84aa4",
+      "needsInterop": false
+    },
+    "@taiga-ui/legacy/components/primitive-textfield": {
+      "src": "../../../../../../node_modules/@taiga-ui/legacy/fesm2022/taiga-ui-legacy-components-primitive-textfield.mjs",
+      "file": "@taiga-ui_legacy_components_primitive-textfield.js",
+      "fileHash": "8a5a100a",
+      "needsInterop": false
+    },
+    "@taiga-ui/addon-commerce": {
+      "src": "../../../../../../node_modules/@taiga-ui/addon-commerce/fesm2022/taiga-ui-addon-commerce.mjs",
+      "file": "@taiga-ui_addon-commerce.js",
+      "fileHash": "23091ef1",
+      "needsInterop": false
+    },
+    "@taiga-ui/core/components/label": {
+      "src": "../../../../../../node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-components-label.mjs",
+      "file": "@taiga-ui_core_components_label.js",
+      "fileHash": "d6db086e",
+      "needsInterop": false
+    },
+    "@taiga-ui/core/directives/dropdown": {
+      "src": "../../../../../../node_modules/@taiga-ui/core/fesm2022/taiga-ui-core-directives-dropdown.mjs",
+      "file": "@taiga-ui_core_directives_dropdown.js",
+      "fileHash": "db171875",
+      "needsInterop": false
+    },
+    "@dhx/trial-eventcalendar": {
+      "src": "../../../../../../node_modules/@dhx/trial-eventcalendar/dist/event-calendar.es.js",
+      "file": "@dhx_trial-eventcalendar.js",
+      "fileHash": "7628b511",
+      "needsInterop": false
+    },
+    "@taiga-ui/i18n": {
+      "src": "../../../../../../node_modules/@taiga-ui/i18n/fesm2022/taiga-ui-i18n.mjs",
+      "file": "@taiga-ui_i18n.js",
+      "fileHash": "a3fdb92c",
+      "needsInterop": false
+    },
+    "@angular/common/locales/ru": {
+      "src": "../../../../../../node_modules/@angular/common/locales/ru.mjs",
+      "file": "@angular_common_locales_ru.js",
+      "fileHash": "d1a9fbf1",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4AQRWBMX": {
+      "file": "chunk-4AQRWBMX.js"
+    },
+    "chunk-Z7JB6L5Y": {
+      "file": "chunk-Z7JB6L5Y.js"
+    },
+    "chunk-D734UJ25": {
+      "file": "chunk-D734UJ25.js"
+    },
+    "chunk-SEG2I76I": {
+      "file": "chunk-SEG2I76I.js"
+    },
+    "chunk-PX5TNPDL": {
+      "file": "chunk-PX5TNPDL.js"
+    },
+    "chunk-R72I37RO": {
+      "file": "chunk-R72I37RO.js"
+    },
+    "chunk-LFME3TYZ": {
+      "file": "chunk-LFME3TYZ.js"
+    },
+    "chunk-NSLG33YN": {
+      "file": "chunk-NSLG33YN.js"
+    },
+    "chunk-2C5Z4Q7S": {
+      "file": "chunk-2C5Z4Q7S.js"
+    },
+    "chunk-6DF62NVO": {
+      "file": "chunk-6DF62NVO.js"
+    },
+    "chunk-ATP3OCRR": {
+      "file": "chunk-ATP3OCRR.js"
+    },
+    "chunk-XAZVSJMI": {
+      "file": "chunk-XAZVSJMI.js"
+    },
+    "chunk-JWUKXRK4": {
+      "file": "chunk-JWUKXRK4.js"
+    },
+    "chunk-7Y2PXZRN": {
+      "file": "chunk-7Y2PXZRN.js"
+    },
+    "chunk-K4IVBCE7": {
+      "file": "chunk-K4IVBCE7.js"
+    },
+    "chunk-OL6PQ5ZF": {
+      "file": "chunk-OL6PQ5ZF.js"
+    },
+    "chunk-4BHFHEOY": {
+      "file": "chunk-4BHFHEOY.js"
+    },
+    "chunk-ZDHFV4K6": {
+      "file": "chunk-ZDHFV4K6.js"
+    },
+    "chunk-KYGQM5F2": {
+      "file": "chunk-KYGQM5F2.js"
+    },
+    "chunk-HUC4OT3S": {
+      "file": "chunk-HUC4OT3S.js"
+    },
+    "chunk-OJB7JBNO": {
+      "file": "chunk-OJB7JBNO.js"
+    },
+    "chunk-4HPDDB75": {
+      "file": "chunk-4HPDDB75.js"
+    },
+    "chunk-6HW5XFU2": {
+      "file": "chunk-6HW5XFU2.js"
+    },
+    "chunk-PL5KKZU7": {
+      "file": "chunk-PL5KKZU7.js"
+    },
+    "chunk-WK5RQMCA": {
+      "file": "chunk-WK5RQMCA.js"
+    },
+    "chunk-YGFZQ3ZV": {
+      "file": "chunk-YGFZQ3ZV.js"
+    },
+    "chunk-2REAV3OW": {
+      "file": "chunk-2REAV3OW.js"
+    },
+    "chunk-IASHH3I3": {
+      "file": "chunk-IASHH3I3.js"
+    },
+    "chunk-565WYVFV": {
+      "file": "chunk-565WYVFV.js"
+    },
+    "chunk-WDMUDEB6": {
+      "file": "chunk-WDMUDEB6.js"
+    }
+  }
+}
